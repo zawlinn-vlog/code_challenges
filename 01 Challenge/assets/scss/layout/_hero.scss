@@ -1,0 +1,20 @@
+//
+
+.ordering {
+  padding: 3rem;
+  background-color: getColor(secondary__light);
+  border-radius: 1rem;
+  margin: 4rem 0;
+
+  @include media(42.5em) {
+    padding: 2rem;
+  }
+
+  &__header {
+    font-size: 2.2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: getColor(secondary__dark);
+    margin-bottom: 1.5rem;
+  }
+}

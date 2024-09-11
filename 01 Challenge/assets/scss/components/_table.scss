@@ -1,0 +1,16 @@
+//
+
+.table {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  &__data {
+    width: 50%;
+    padding: 1rem;
+
+    background-color: lighten($black, 98%);
+    margin-bottom: 1px solid #fff;
+  }
+}

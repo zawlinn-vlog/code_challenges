@@ -1,0 +1,39 @@
+/*    FONTs   */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+// VARIABLES
+
+$primary__lighter: #f3e6d8;
+$primary__light: #e4ded8;
+$primary: #5f574e;
+$primary__dark: #302d2c;
+$tertiary: #854632;
+$secondary__dark: #7b284f;
+$secondary__light: #fff5fa;
+
+$link__color: #3e52a3;
+
+$light: #ffffff;
+$black: #000;
+
+$colors: (
+  "primary__lighter": $primary__lighter,
+  "primary__light": $primary__light,
+  "primary": $primary,
+  "primary__dark": $primary__dark,
+  "secondary__light": $secondary__light,
+  "secondary__dark": $secondary__dark,
+  "tertiary": $tertiary,
+  "link": $link__color,
+  "light": $light,
+  "black": $black,
+);
+
+/* CREATING CSS VARIABLEs */
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}__color: #{$color};
+  }
+}

@@ -1,0 +1,28 @@
+//
+
+.instruction {
+  margin-bottom: 5rem;
+
+  .list__container {
+    list-style: none;
+    counter-reset: number;
+  }
+
+  .list__item {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .list__item:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+
+  .list__item::before {
+    counter-increment: number;
+    content: counter(number) ".";
+    font-weight: 700;
+    // padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    color: getColor(secondary__dark);
+  }
+}
