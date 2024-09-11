@@ -1,0 +1,25 @@
+/*    FONTs   */
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+// VARIABLES
+
+$primary: #f4d04e;
+$light: #ffffff;
+$gray__light: #6b6b6b;
+$gray__dark: rgb(18, 18, 18);
+
+$colors: (
+  "primary": $primary,
+  "light": $light,
+  "gray__light": $gray__light,
+  "gray__dark": $gray__dark,
+);
+
+//
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}__color: #{$color};
+  }
+}

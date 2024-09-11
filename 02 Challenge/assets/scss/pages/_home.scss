@@ -1,0 +1,40 @@
+//
+
+.wrapper {
+  min-height: 100vh;
+  background-color: getColor(primary);
+  padding: 10rem 0;
+  box-sizing: 0 0.5rem 1rem rgba($gray__dark, 0.3);
+
+  display: grid;
+  place-content: center center;
+
+  @include media(42.5em) {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 2rem;
+
+    background-color: getColor(light);
+    border-radius: 2rem;
+    border: 0.1rem solid $gray__dark;
+
+    box-shadow: 0.8rem 0.8rem 0rem $gray__dark;
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__img {
+    height: 3.2rem;
+    object-fit: cover;
+
+    // filter: drop-shadow(0.5rem 1rem 1rem rgba($gray__dark, 0.6));
+  }
+}

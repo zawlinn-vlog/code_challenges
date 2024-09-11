@@ -1,0 +1,30 @@
+//
+
+.card__date {
+  color: lighten($gray__dark, 20%);
+  font-size: 1.4rem;
+  margin: 1rem 0 0.8rem;
+}
+
+.main__title {
+  font-size: 2.4rem;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:active {
+    color: getColor(primary);
+  }
+}
+
+.card__txt {
+  font-size: 1.6rem;
+  color: lighten($gray__light, 10%);
+  line-height: 1.5;
+  margin: 0.9rem 0 2rem;
+}
+
+.author__name {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: lighten($gray__dark, 20%);
+}
