@@ -3,7 +3,7 @@
 .container {
   min-height: 100vh;
 
-  padding: 0.5rem;
+  padding: 5rem 2rem;
 
   display: grid;
   grid-template-columns: repeat(12, minmax(4rem, 7rem));
@@ -13,7 +13,7 @@
 
   @include media(54.75em) {
     // height: auto;
-    padding: 5rem 2rem;
+    // padding: 5rem 2rem;
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, minmax(5rem, auto));
@@ -22,6 +22,7 @@
   @include media(43.75em) {
     grid-template-rows: repeat(12, minmax(7rem, auto));
   }
+
   @include media(43.75em) {
     grid-template-rows: repeat(13, minmax(7rem, auto));
   }
@@ -30,7 +31,8 @@
 .section {
   border-radius: 0.8rem;
   padding: 2rem;
-  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.15);
+  // box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
   &_01 {
     grid-area: 1 / 1 / 4 / 7;

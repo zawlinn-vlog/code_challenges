@@ -11,12 +11,8 @@
 html {
   font-size: 62.5%;
   font-family: "Barlow Semi Condensed", sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: 400;
-
-  @include media(48em) {
-    line-height: 1.7;
-  }
 
   @include media(37.5) {
     line-height: 1.8;

@@ -6,7 +6,7 @@
 
 .author {
   &__name {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1;
     color: lighten($primary, 40%);
   }
@@ -22,11 +22,11 @@
 .note {
   &__1 {
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   &__2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     color: rgba($light, 0.7);
   }
@@ -34,5 +34,4 @@
 
 :is(.text__dark) :where(.author__name, .note__2) {
   color: rgba($tertiary, 0.9);
-  line-height: 1;
 }
