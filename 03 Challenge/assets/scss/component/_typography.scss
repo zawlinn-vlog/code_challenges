@@ -34,5 +34,5 @@
 
 :is(.text__dark) :where(.author__name, .note__2) {
   color: rgba($tertiary, 0.9);
-  line-height: 1.7;
+  line-height: 1;
 }
