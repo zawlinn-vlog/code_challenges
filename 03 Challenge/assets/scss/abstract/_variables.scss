@@ -1,0 +1,30 @@
+// FONTs
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// PRIMARY COLORs
+
+$primary: #7541c8;
+$secondary__1: #48556a;
+$tertiary: #19212e;
+$light: #ffffff;
+
+// Neutral Colors
+
+$gray__light: #cfcfcf;
+$secondary__2: #ecf2f8;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary__1,
+  "tertiary": $tertiary,
+  "light": $light,
+  "gray": $gray__light,
+  "secondary__light": $secondary__2,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}__color: #{$color};
+  }
+}

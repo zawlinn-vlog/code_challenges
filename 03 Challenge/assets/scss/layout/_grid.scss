@@ -1,0 +1,126 @@
+//
+
+.container {
+  height: 100vh;
+
+  padding: 0.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(4rem, 7rem));
+  grid-template-rows: repeat(6, minmax(4rem, auto));
+  place-content: center center;
+  gap: 2rem;
+
+  @include media(54.75em) {
+    height: auto;
+    padding: 5rem 2rem;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, minmax(5rem, auto));
+  }
+
+  @include media(43.75em) {
+    grid-template-rows: repeat(12, minmax(7rem, auto));
+  }
+  @include media(43.75em) {
+    grid-template-rows: repeat(13, minmax(7rem, auto));
+  }
+}
+
+.section {
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.15);
+
+  &_01 {
+    grid-area: 1 / 1 / 4 / 7;
+    background-image: url("../images/bg-pattern-quotation.svg"),
+      linear-gradient(rgba($primary, 0.9), rgba($primary, 0.9));
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+
+    @include media(54.75em) {
+      grid-area: 1 / 1 / 4 /9;
+    }
+
+    @include media(43.75em) {
+      grid-area: 1 / 2 / 4/ -2;
+    }
+    @include media(37.5em) {
+      grid-area: 1 / 1 / 4/ -1;
+    }
+  }
+
+  &_02 {
+    grid-area: 1/ 7 / 4 / 10;
+    background-color: getColor(secondary);
+    @include media(54.75em) {
+      grid-area: 1 / 9 / 4 / -1;
+    }
+
+    @include media(43.75em) {
+      grid-area: 4 / 1/ 7/ 8;
+    }
+
+    @include media(37.5em) {
+      grid-area: 4 / 1 / 6/ -1;
+    }
+  }
+
+  &_03 {
+    grid-area: 1 / 10 /7 / 13;
+    background-color: getColor(light);
+
+    @include media(54.75em) {
+      grid-area: 7 / 3 / 10 / -2;
+    }
+
+    @include media(43.75em) {
+      grid-area: 7 / 2 / 10/ -2;
+    }
+
+    @include media(37.5em) {
+      grid-area: 6 / 1 / 9 / -1;
+    }
+  }
+  &_04 {
+    grid-area: 4 / 1 / 7 / 4;
+    background-color: getColor(light);
+
+    @include media(54.75em) {
+      grid-area: 4 / 1 / 7 / 5;
+    }
+
+    @include media(43.75em) {
+      grid-area: 4 / 8/ 7/ -1;
+    }
+
+    @include media(37.5em) {
+      grid-area: 12 / 1 / 14 / -1;
+    }
+  }
+  &_05 {
+    grid-area: 4 / 4 / 7 / 10;
+    background-color: getColor(tertiary);
+
+    @include media(54.75em) {
+      grid-area: 4 / 5 / 7 / -1;
+    }
+
+    @include media(43.75em) {
+      grid-area: 10 / 2 / 13/ -2;
+    }
+
+    @include media(37.5em) {
+      grid-area: 9 / 1 / 12 / -1;
+    }
+  }
+}
+
+.author {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
