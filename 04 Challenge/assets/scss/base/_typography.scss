@@ -1,0 +1,34 @@
+//
+
+.card__title {
+  font-size: 3.8rem;
+  line-height: 1.3;
+  color: getColor(light);
+
+  @include media(37.5em) {
+    font-size: 2.8rem;
+  }
+}
+
+.card__txt {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  padding-right: 3rem;
+
+  @include media(37.5em) {
+    padding-right: 1rem;
+  }
+}
+
+.card__count-number {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: getColor(light);
+  letter-spacing: 0.2rem;
+}
+
+.card__count-txt {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}

@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: $max-width;
+  min-height: 100vh;
+  margin: 0 auto 4rem;
+
+  display: grid;
+  place-content: center center;
+}

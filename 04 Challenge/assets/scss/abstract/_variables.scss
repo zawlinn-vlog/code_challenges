@@ -1,0 +1,29 @@
+//
+
+$primary: #090b1a; // Main Background
+$secondary: #1b1938; // Card Background
+$tertiary: #aa5cdb; // Accent
+
+$light: #ffffff;
+$gray--1: hsla(0, 0%, 100%, 0.75);
+$gray--2: hsla(0, 0%, 100%, 0.6);
+$black: #000;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "light": $light,
+  "gray--1": $gray--1,
+  "gray--2": $gray--2,
+  "black": $black,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+}
+
+$max-width: 114rem;
+$h: 50rem;

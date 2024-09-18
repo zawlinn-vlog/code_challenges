@@ -1,0 +1,25 @@
+//
+
+.mark {
+  color: getColor(tertiary);
+}
+
+.mb-9 {
+  margin-bottom: 9rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+
+  @include media(37.5em) {
+    margin-bottom: 4rem;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+
+  @include media(37.5em) {
+    margin-bottom: 2.6rem;
+  }
+}

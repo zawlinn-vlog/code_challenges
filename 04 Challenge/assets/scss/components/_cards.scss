@@ -1,0 +1,17 @@
+//
+
+.card__txt-container {
+  padding: 6rem;
+
+  @include media(37.5em) {
+    padding: 6rem 3rem;
+  }
+}
+
+.img__container {
+  background-image: linear-gradient(rgba($tertiary, 0.9), rgba($tertiary, 0.9)),
+    url(../images/img-01.jpg);
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: multiply;
+}

@@ -1,0 +1,49 @@
+//
+
+.card {
+  background-color: getColor(secondary);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: grid;
+  min-height: 40rem;
+  grid-template-columns: repeat(2, 1fr);
+  //   column-gap: 3rem;
+
+  @include media(54.75em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50rem);
+  }
+
+  @include media(37.5em) {
+    grid-template-rows: repeat(2, minmax(25rem, auto));
+  }
+
+  &__noti {
+    display: flex;
+
+    & > * {
+      flex-grow: 1;
+    }
+  }
+
+  &__count {
+    display: grid;
+  }
+
+  &__txt-container {
+    @include media(54.75em) {
+      padding: 5rem 15rem 0;
+    }
+    @include media(47em) {
+      padding: 5rem 10rem 0;
+    }
+
+    @include media(45em) {
+      padding: 7rem 8rem;
+    }
+    @include media(37.5em) {
+      padding: 5rem 4rem;
+    }
+  }
+}
