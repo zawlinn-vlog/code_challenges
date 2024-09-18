@@ -1,5 +1,7 @@
 # Front-end Style Guide
 
+![alt text](./assets/design/design.jpg)
+
 ## Layout
 
 The designs were created to the following widths:
