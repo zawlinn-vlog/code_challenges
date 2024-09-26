@@ -2,7 +2,7 @@
 
 .card {
   width: 33rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   background-color: getColor(gray__2);
   color: #eee;
   border-radius: 0.9rem;
@@ -11,6 +11,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 0.8rem;
+    margin-bottom: 0.7rem;
     overflow: hidden;
     cursor: pointer;
 
@@ -64,7 +65,6 @@
   &__title-id {
     font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 0.7rem;
     display: inline-block;
     color: rgba($light, 0.8);
 
@@ -106,7 +106,7 @@
     align-items: center;
     column-gap: 1.1rem;
 
-    padding: 2rem 0 0.5rem;
+    padding: 2rem 0 2.5rem;
     border-top: 0.2px solid getColor(gray__3);
 
     &-img {
