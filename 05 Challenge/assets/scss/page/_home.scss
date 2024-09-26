@@ -1,0 +1,9 @@
+.wrapper {
+  // max-width: $max-width;
+  // margin: 0 auto;
+  min-height: 100vh;
+  background-color: getColor(gray__1);
+
+  display: grid;
+  place-content: center center;
+}

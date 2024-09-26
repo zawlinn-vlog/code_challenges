@@ -1,0 +1,38 @@
+// FONTs
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+//
+
+$primary: #8bacda;
+$secondary: #00fff7;
+
+/*
+$dark-1: #0d192b; // Main card
+$dark-2: #14253d; // Card card
+$dark-3: #2f415b; // Line
+*/
+
+$dark-1: #0d192b; // Main card
+$dark-2: #14253d; // Card card
+$dark-3: #2f415b; // Line
+
+$light: #ffffff;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "gray__1": $dark-1,
+  "gray__2": $dark-2,
+  "gray__3": $dark-3,
+  "light": $light,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}-color: #{$color};
+  }
+}
+
+$max-width: 144rem;
+$min-width: 34.7rem; // 22em

@@ -1,0 +1,135 @@
+//
+
+.card {
+  width: 30rem;
+  padding: 2rem;
+  background-color: getColor(gray__2);
+  color: #eee;
+  border-radius: 0.9rem;
+
+  &__pic {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    position: relative;
+
+    &:hover .card__viewer {
+      opacity: 1;
+    }
+
+    &:hover .card__viewer-eye {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 10;
+  }
+
+  &__viewer {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    background-image: linear-gradient(
+      rgba($secondary, 0.5),
+      rgba($secondary, 0.4)
+    );
+
+    display: grid;
+    place-content: center center;
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: all 0.4s;
+
+    position: absolute;
+    z-index: 11;
+
+    &-eye {
+      transform: translateY(2rem);
+      opacity: 0;
+
+      transition: all 0.3s ease-in-out 0.1s;
+    }
+  }
+
+  &__title-id {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0.7rem;
+    display: inline-block;
+    color: rgba($light, 0.8);
+
+    cursor: pointer;
+
+    &:hover {
+      color: getColor(secondary);
+    }
+  }
+
+  &__txt {
+    font-size: 1.6rem;
+    color: getColor(primary);
+  }
+
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+    & > * {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__balance-txt {
+    color: getColor(secondary);
+  }
+
+  &__date-txt {
+    color: getColor(primary);
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    column-gap: 1.1rem;
+
+    padding: 2rem 0 0.5rem;
+    border-top: 0.2px solid getColor(gray__3);
+
+    &-img {
+      width: 3rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 0.2rem solid $primary;
+    }
+
+    &-txt {
+      font-size: 1.5rem;
+      color: getColor(primary);
+    }
+
+    &-name {
+      text-transform: capitalize;
+      color: rgba($light, 0.8);
+
+      &:hover,
+      &:active {
+        color: getColor(secondary);
+      }
+    }
+  }
+}
