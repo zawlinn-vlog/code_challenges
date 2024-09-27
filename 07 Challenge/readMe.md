@@ -1,5 +1,7 @@
 # Front-end Style Guide
 
+![Desktop Version](./assets/design/desktop-design.jpg)
+
 ## Layout
 
 The designs were created to the following widths:
@@ -17,7 +19,7 @@ The designs were created to the following widths:
 - Slate 500: hsl(216, 15%, 48%)
 - Slate 900: hsl(218, 44%, 22%)
 
-## Typography
+## Typography0
 
 ### Body Copy
 
