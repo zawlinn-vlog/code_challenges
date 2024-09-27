@@ -4,11 +4,6 @@
   font-size: 4.2rem;
   line-height: 1.2;
   display: inline-block;
-
-  @include media(43.75em) {
-    font-size: 2.8rem;
-    white-space: wrap;
-  }
 }
 
 %g__center {

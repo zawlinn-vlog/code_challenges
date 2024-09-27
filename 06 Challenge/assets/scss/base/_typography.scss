@@ -15,11 +15,20 @@
 
   &__txt {
     font-size: 1.5rem;
-    max-width: 75%;
+    min-width: 45%;
+    max-width: 50%;
     margin: 0 auto;
     text-align: center;
     color: getColor(dark-2);
 
     // margin-bottom: 8rem;
+
+    @include media(66.25em) {
+      max-width: 80%;
+    }
+
+    @include media(43.75em) {
+      min-width: 95%;
+    }
   }
 }
