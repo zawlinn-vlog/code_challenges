@@ -3,11 +3,16 @@
 .row {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(12, minmax(1rem, 1fr));
+  place-content: center center;
+  grid-template-columns: repeat(12, minmax(0.3rem, 8rem));
   grid-template-rows: repeat(8, minmax(1rem, auto));
 
-  @include media(43.75em) {
-    grid-template-columns: repeat(12, 1fr);
+  @include media(75em) {
+    grid-template-columns: repeat(12, minmax(1rem, 4rem));
+  }
+
+  @include media(50em) {
+    grid-template-columns: repeat(8, minmax(1rem, 2.5rem));
     grid-template-rows: repeat(16, 1fr);
   }
 }
@@ -16,16 +21,16 @@
   grid-column: 1 / span 4;
   grid-row: 3 / span 4;
 
-  @include media(66.25em) {
+  @include media(75em) {
     grid-column: 1 / span 6;
     grid-row: 1 / span 4;
   }
 
-  @include media(43.75em) {
-    grid-column: 2 / -2;
-  }
+  // @include media(50em) {
+  //   grid-column: 2 / -2;
+  // }
 
-  @include media(31.25em) {
+  @include media(50em) {
     grid-column: 1 / -1;
   }
 }
@@ -34,17 +39,18 @@
   grid-column: 5 / span 4;
   grid-row: 1 / span 4;
 
-  @include media(66.25em) {
+  @include media(75em) {
     grid-column: 7 / -1;
   }
 
-  @include media(43.75em) {
-    grid-column: 2/ -2;
-    grid-row: 5 / span 4;
-  }
+  // @include media(43.75em) {
+  //   grid-column: 2/ -2;
+  //   grid-row: 5 / span 4;
+  // }
 
-  @include media(31.25em) {
+  @include media(50em) {
     grid-column: 1 / -1;
+    grid-row: 5 / span 4;
   }
 }
 
@@ -52,17 +58,18 @@
   grid-column: 5 / span 4;
   grid-row: 5 / span 4;
 
-  @include media(66.25em) {
+  @include media(75em) {
     grid-column: 1 / span 6;
   }
 
-  @include media(43.75em) {
-    grid-column: 2 / -2;
-    grid-row: 9 / span 4;
-  }
+  // @include media(43.75em) {
+  //   grid-column: 2 / -2;
+  //   grid-row: 9 / span 4;
+  // }
 
-  @include media(31.25em) {
+  @include media(50em) {
     grid-column: 1 / -1;
+    grid-row: 9 / span 4;
   }
 }
 
@@ -70,17 +77,18 @@
   grid-column: 9 / -1;
   grid-row: 3 / span 4;
 
-  @include media(66.25em) {
+  @include media(75em) {
     grid-column: 7/ -1;
     grid-row: 5 / -1;
   }
 
-  @include media(43.75em) {
-    grid-column: 2 /-2;
-    grid-row: 13 / span 4;
-  }
+  // @include media(43.75em) {
+  //   grid-column: 2 /-2;
+  //   grid-row: 13 / span 4;
+  // }
 
-  @include media(31.25em) {
+  @include media(50em) {
     grid-column: 1 / -1;
+    grid-row: 13 / span 4;
   }
 }
