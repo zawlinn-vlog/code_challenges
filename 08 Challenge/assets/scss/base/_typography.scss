@@ -1,0 +1,19 @@
+//
+
+.card {
+  &__user-name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    line-height: 1.4;
+  }
+
+  &__user-location {
+    color: getColor(primary);
+    font-size: 1.4rem;
+  }
+
+  &__user-job {
+    font-size: 1.5rem;
+  }
+}

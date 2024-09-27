@@ -6,7 +6,9 @@
 
 $primary: #c5f82a;
 
-$light: #ffffff;
+// $light: #ffffff;
+
+$light: rgba(#fff, 0.8);
 
 $gray-1: #333333;
 $gray-2: #1f1f1f;
@@ -22,6 +24,6 @@ $colors: (
 
 :root {
   @each $name, $color in $colors {
-    --#{$name}-color: #{$color};
+    --color-#{$name}: #{$color};
   }
 }

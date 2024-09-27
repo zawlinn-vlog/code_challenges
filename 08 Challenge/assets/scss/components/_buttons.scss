@@ -1,0 +1,37 @@
+//
+
+.user {
+  &__social {
+    list-style: none;
+    width: 100%;
+  }
+
+  &__contact {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    &-link {
+      color: getColor(light);
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      display: block;
+      padding: 1.2rem 0;
+      border-radius: 1rem;
+
+      background-image: linear-gradient(120deg, $gray-1 50%, $primary 0%);
+      background-size: 220%;
+      background-position: left;
+
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+      &:hover {
+        // background-size: 100%;
+        background-position: 100% 0;
+        color: getColor(gray-3);
+      }
+    }
+  }
+}

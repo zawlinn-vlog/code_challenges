@@ -1,0 +1,37 @@
+//
+
+.card {
+  width: 40rem;
+  min-height: 60rem;
+  background-color: getColor(gray-2);
+  border-radius: 1rem;
+  padding: 5rem 4rem;
+
+  color: getColor(light);
+
+  &__pic {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    border: 0.3rem solid getColor(light);
+    cursor: pointer;
+
+    &:hover {
+      border: 0.3rem solid getColor(primary);
+    }
+
+    &:hover .card__img {
+      transform: scale(1.2) translateY(0.8rem);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    // border-radius: 50%;
+
+    transition: all 0.3s;
+  }
+}
