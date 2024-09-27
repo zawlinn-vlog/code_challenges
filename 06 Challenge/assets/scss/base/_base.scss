@@ -1,0 +1,24 @@
+//
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.7;
+  box-sizing: border-box;
+
+  //   @include media(43.75em) {
+  //     font-size: 59.38%;
+  //   }
+}
+
+body {
+  background-color: rgba($dark-1, 0.1);
+}

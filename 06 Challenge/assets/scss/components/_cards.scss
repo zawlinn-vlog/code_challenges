@@ -1,0 +1,41 @@
+//
+
+.card {
+  padding: 3rem;
+  background-color: getColor(light);
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+  &__title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: getColor(dark-1);
+  }
+
+  &__txt {
+    font-size: 1.5rem;
+    color: getColor(dark-2);
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: end;
+  }
+
+  &-1 {
+    border-top: 0.4rem solid getColor(border-cyan);
+  }
+
+  &-2 {
+    border-top: 0.4rem solid getColor(border-red);
+  }
+
+  &-3 {
+    border-top: 0.4rem solid getColor(border-orange);
+  }
+
+  &-4 {
+    border-top: 0.4rem solid getColor(border-blue);
+  }
+}

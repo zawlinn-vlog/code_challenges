@@ -1,0 +1,12 @@
+//
+.text__center {
+  text-align: center;
+}
+
+//
+
+@for $i from 1 through 12 {
+  .mb-#{$i} {
+    margin-bottom: #{$i / 2}rem;
+  }
+}

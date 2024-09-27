@@ -1,0 +1,34 @@
+// FONTS
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// COLORs
+
+$border-red: #ea5353;
+$border-cyan: #45d3d3;
+$border-orange: #fcaf4a;
+$border-blue: #549ef2;
+
+$dark-1: #4c4e61;
+$dark-2: #a3a5ae;
+
+$light: #fafafa;
+
+$colors: (
+  "border-red": $border-red,
+  "border-cyan": $border-cyan,
+  "border-orange": $border-orange,
+  "border-blue": $border-blue,
+
+  "dark-1": $dark-1,
+  "dark-2": $dark-2,
+  "light": $light,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}-color: #{$color};
+  }
+}
+
+$max-width: 144rem;
