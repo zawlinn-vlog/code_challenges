@@ -13,4 +13,11 @@ html {
   font-family: inter, sans-serif;
   font-size: 62.5%;
   line-height: 1.7;
+
+  @media screen and (max-width: 37.5em) {
+    font-size: 56.25%;
+  }
+  @media screen and (max-width: 25em) {
+    font-size: 50%;
+  }
 }
