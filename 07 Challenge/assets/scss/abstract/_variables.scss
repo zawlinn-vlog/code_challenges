@@ -1,0 +1,22 @@
+//
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+//
+
+$primary: #d6e2f0;
+$secondary: #68778d;
+$tertiary: #1f3251;
+
+$light: #ffffff;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "light": $light,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}-color: #{$color};
+  }
+}

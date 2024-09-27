@@ -1,0 +1,27 @@
+// FONTs
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// COLORs
+
+$primary: #c5f82a;
+
+$light: #ffffff;
+
+$gray-1: #333333;
+$gray-2: #1f1f1f;
+$gray-3: #141414;
+
+$colors: (
+  "primary": $primary,
+  "light": $light,
+  "gray-1": $gray-1,
+  "gray-2": $gray-2,
+  "gray-3": $gray-3,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}-color: #{$color};
+  }
+}

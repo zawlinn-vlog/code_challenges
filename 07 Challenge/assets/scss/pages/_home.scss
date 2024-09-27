@@ -1,0 +1,7 @@
+.wrapper {
+  min-height: 100vh;
+  background-color: getColor(primary);
+
+  display: grid;
+  place-content: center center;
+}
