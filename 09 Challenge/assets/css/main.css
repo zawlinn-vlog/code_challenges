@@ -40,9 +40,11 @@ html {
 .card__title {
   font-size: 3.8rem;
   margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
 }
 .card__txt {
   font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .btn__primary {
