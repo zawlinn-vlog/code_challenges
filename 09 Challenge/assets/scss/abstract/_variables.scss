@@ -1,0 +1,26 @@
+// FONTs
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+//
+
+$primary: #e38826;
+$secondary: #006970;
+$secondary-dark: #004241;
+
+$light: #ffffffbf; // Paragraph
+$gray: #f2f2f2; // Background, Headings, buttons
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "secondary__dark": $secondary-dark,
+  "light": $light,
+  "gray": $gray,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}

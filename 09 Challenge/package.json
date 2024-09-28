@@ -1,0 +1,28 @@
+{
+  "name": "09-challenge",
+  "version": "1.0.0",
+  "description": "## Layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server",
+    "compile": "sass ./assets/scss/main.scss ./assets/css/main.css --no-source-map -w",
+    "start": "npm-run-all --parallel server compile",
+    "prefix": "postcss ./assets/css/main.css -d ./assets/css --use autoprefixer",
+    "compressed": "sass ./assets/css/main.css ./assets/css/main.min.css --no-source-map --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": "cover 99.5%",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.79.3"
+  }
+}

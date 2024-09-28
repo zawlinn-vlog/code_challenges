@@ -1,0 +1,29 @@
+//
+
+.card {
+  padding: 4rem 3rem;
+  color: getColor(light);
+  
+
+  @media screen and (max-width: 46em) {
+    padding: 3rem;
+  }
+
+  @media screen and (max-width: 38.2em) {
+    padding: 4rem 3rem;
+  }
+  &-1 {
+    background-color: getColor(primary);
+  }
+  &-2 {
+    background-color: getColor(secondary);
+  }
+
+  &-3 {
+    background-color: getColor(secondary__dark);
+  }
+
+  &__title {
+    margin: 1.4rem 0;
+  }
+}

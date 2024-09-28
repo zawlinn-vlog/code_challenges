@@ -1,0 +1,25 @@
+.card {
+  flex: 1 0 10rem;
+  display: flex;
+
+  display: grid;
+  grid-template-rows: repeat(2, auto) minmax(20rem, 3fr) 1fr;
+
+  &__group {
+    display: flex;
+    max-width: 90rem;
+    margin-bottom: 3rem;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @media screen and (max-width: 38.2em) {
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 31.25em) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//
+
+.wrapper {
+  min-height: 100vh;
+  background-color: getColor(light);
+
+  @extend %g__center;
+
+  @media screen and (max-width: 46em) {
+    font-size: 100%;
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 31.25em) {
+    padding: 2rem;
+  }
+}
