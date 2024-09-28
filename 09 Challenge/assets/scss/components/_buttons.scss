@@ -13,4 +13,8 @@
   border: 0.3rem solid transparent;
   text-transform: capitalize;
   place-self: end start;
+
+  @media screen and (max-width: 38.2em) {
+    font-size: 2rem;
+  }
 }
