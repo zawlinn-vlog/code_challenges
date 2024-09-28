@@ -5,10 +5,18 @@
     font-size: 3.8rem;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 1);
+
+    @media screen and (max-width: 38.2em) {
+      font-size: 4.5rem;
+    }
   }
 
   &__txt {
     font-size: 1.5rem;
     color: rgba($light, 0.6);
+
+    @media screen and (max-width: 38.2em) {
+      font-size: 2rem;
+    }
   }
 }

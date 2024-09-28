@@ -42,9 +42,19 @@ html {
   margin-bottom: 2rem;
   color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 38.2em) {
+  .card__title {
+    font-size: 4.5rem;
+  }
+}
 .card__txt {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 38.2em) {
+  .card__txt {
+    font-size: 2rem;
+  }
 }
 
 .btn__primary {
@@ -105,7 +115,7 @@ html {
 }
 @media screen and (max-width: 38.2em) {
   .card {
-    padding: 4rem 3rem;
+    padding: 5rem 7rem;
   }
 }
 .card-1 {
