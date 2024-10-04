@@ -1,0 +1,27 @@
+//
+
+$primary: #00c39a;
+$secondary: #ffbf3c;
+$tertiary: #8325fd;
+
+$light-1: #ffffff;
+$light-2: #cacbca;
+
+$dark-1: #1e1b1e;
+$dark-2: #0f0f0f;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "light-1": $light-1,
+  "light-2": $light-2,
+  "dark-1": $dark-1,
+  "dark-2": $dark-2,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}

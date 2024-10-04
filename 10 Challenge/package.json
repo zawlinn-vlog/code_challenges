@@ -1,0 +1,31 @@
+{
+  "name": "10-challenge",
+  "version": "1.0.0",
+  "browserslist": "cover 99.5%",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devServer": "live-server",
+    "compile:css": "sass ./assets/scss/main.scss ./assets/css/main.css",
+    "watch:css": "sass ./assets/scss/main.scss ./assets/css/main.css -w",
+    "start": "npm-run-all --parallel devServer watch:css",
+    "prefix:css": "postcss ./assets/css/main.concat.css -o ./assets/css/main.css --use autoprefixer",
+    "compressed:css": "sass ./assets/css/main.prefix.css ./assets/css/main.min.css --use-style compressed",
+    "build:css": "npm-run-all compile:css prefix:css prefix:css compressed:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "concat": "^1.0.3",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.79.4"
+  }
+}

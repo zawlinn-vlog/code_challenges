@@ -1,0 +1,13 @@
+//
+
+.text__white {
+  color: getColor(light-1);
+}
+
+.bg__dark {
+  background-color: getColor(dark-1);
+}
+
+.text__dark-3 {
+  color: darken($light-1, 30%);
+}
