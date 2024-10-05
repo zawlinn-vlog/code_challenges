@@ -1,1 +1,32 @@
 //
+
+.btn {
+  &:link,
+  &:visited {
+    font-size: 1.3rem;
+  }
+
+  &__tertiary {
+    background-color: getColor(tertiary);
+    color: getColor(light-1);
+  }
+
+  &__header {
+    padding: 0.5rem 2rem 0.5rem 3rem;
+    border-radius: 2rem;
+
+    position: absolute;
+    bottom: 3.6rem;
+    right: 4rem;
+  }
+
+  &__txt {
+    text-transform: capitalize;
+    font-size: 1.5rem !important;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #7fffd4;
+    }
+  }
+}

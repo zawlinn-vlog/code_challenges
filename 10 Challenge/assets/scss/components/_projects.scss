@@ -1,1 +1,69 @@
 //
+.projects {
+  padding: 1rem;
+  &__pic__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__pic {
+    width: 32%;
+    aspect-ratio: 1 /1;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: relative;
+
+    &::after,
+    .projects__caption {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      content: "";
+      opacity: 0;
+
+      border-radius: 0.8rem;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+
+      transition: all 0.3s;
+    }
+
+    &:hover::after {
+      backdrop-filter: blur(0.5rem);
+      filter: brightness(95%);
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    transition: all 0.4s;
+  }
+
+  &__pic:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__caption {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transform: translateY(0.8rem);
+    opacity: 0;
+
+    z-index: 20 !important;
+
+    transition: all 0.5s 0.1s;
+
+    &:hover {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

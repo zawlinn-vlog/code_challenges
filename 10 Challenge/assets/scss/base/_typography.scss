@@ -1,9 +1,29 @@
 //
 
+.header__title {
+  font-size: 4.2rem;
+  line-height: 1.15;
+  text-transform: capitalize;
+
+  .block {
+    display: inline-block;
+  }
+}
+
 .head__title {
   font-size: 1.8rem;
 }
 
 .mb-1 {
   margin-bottom: 1rem;
+}
+
+.bio__text {
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  letter-spacing: 0.03rem;
+
+  display: flex;
+  justify-content: space-between;
 }

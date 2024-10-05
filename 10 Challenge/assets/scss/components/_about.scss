@@ -1,1 +1,20 @@
 //
+.aboutMe {
+  padding: 1rem 2rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__txt {
+    font-size: 1.4rem;
+  }
+}
