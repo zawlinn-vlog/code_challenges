@@ -251,6 +251,12 @@ a:visited {
 .projects {
   padding: 1rem;
 }
+.projects__header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .projects__pic__container {
   display: flex;
   justify-content: space-between;
