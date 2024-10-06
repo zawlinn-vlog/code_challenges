@@ -1,5 +1,7 @@
 # Front-end Style Guide
 
+![Design](./assets/design/desktop-design.jpg)
+
 ## Layout
 
 The designs were created to the following widths:

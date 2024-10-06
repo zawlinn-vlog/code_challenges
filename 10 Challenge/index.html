@@ -48,13 +48,31 @@
 
       <!-- BIO -->
       <section class="bio">
-        <figure class="bio__pic">
+        <picture class="bio__pic">
+          <source
+            srcset="
+              ./assets/img/user-02-small.png 1x,
+              ./assets/img/user-02.jpg       2x
+            "
+            media="(max-width: 75em)" />
           <img
-            src="./assets/img/user-large.png"
+            srcset="
+              /assets/img/user-01-small.png  1x,
+              ./assets/img/user-01-large.png 2x
+            "
+            alt="Bima Sakti"
+            class="bio__img"
+        /></picture>
+        <!-- <figure class="bio__pic">
+          <img
+            srcset="
+              /assets/img/user-small.png  1x,
+              ./assets/img/user-large.png 2x
+            "
             alt="Bima Sakti"
             class="bio__img"
           />
-        </figure>
+        </figure> -->
         <div class="bio__details">
           <div class="bio__container bg__dark">
             <div class="bio__wrapper bio__text">
