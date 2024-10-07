@@ -1,1 +1,7 @@
 //
+
+@mixin respond($name) {
+  @media screen and (max-width: $name) {
+    @content;
+  }
+}

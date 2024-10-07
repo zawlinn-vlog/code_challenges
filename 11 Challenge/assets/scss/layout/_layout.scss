@@ -1,9 +1,11 @@
 //
 
-.grid {
-  max-width: 114rem;
+.hero {
+  max-width: 144rem;
   margin: 0 auto;
+}
 
+.grid {
   display: grid;
   // column-gap: 4rem;
   grid-template-columns: repeat(2, minmax(30rem, 1fr));
