@@ -9,9 +9,22 @@
   background-size: 79% 100%;
   background-position: 15% 0;
 
-  padding: 6.3rem 7rem;
+  padding: 4rem 7rem;
 
   position: relative;
+
+  display: grid;
+  place-content: center center;
+
+  @include respond(81em) {
+    background-image: linear-gradient(to right, $primary, $primary),
+      url(../images/bg-mobile.svg);
+    background-size: cover;
+  }
+
+  @include respond(31.25em) {
+    padding: 6rem 1rem;
+  }
 
   &::before {
     content: "";

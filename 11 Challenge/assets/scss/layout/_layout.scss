@@ -1,14 +1,21 @@
 //
 
 .hero {
-  max-width: 144rem;
-  margin: 0 auto;
+  max-width: 120rem;
+  // margin: 0 auto;
 }
 
 .grid {
   display: grid;
   // column-gap: 4rem;
   grid-template-columns: repeat(2, minmax(30rem, 1fr));
+
+  @include respond(65em) {
+    grid-template-columns: minmax(30rem, 60rem);
+    row-gap: 3rem;
+
+    margin-bottom: 4rem;
+  }
 }
 
 .row {

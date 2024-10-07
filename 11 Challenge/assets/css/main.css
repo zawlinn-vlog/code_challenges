@@ -14,10 +14,20 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 75%;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
+}
+@media only screen and (max-width: 96.9em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 81em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -35,8 +45,18 @@ img {
   text-decoration: none;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 81em) {
+  .btn:link, .btn:visited {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 65em) {
+  .btn:link, .btn:visited {
+    font-size: 2rem;
+  }
+}
 .btn__hero {
-  padding: 1rem 4rem;
+  padding: 1.3rem 5rem;
   border-radius: 3rem;
   background-color: var(--color-light);
   color: var(--color-primary);
@@ -71,15 +91,33 @@ img {
   margin-bottom: 7.3rem;
   height: 4.5rem;
 }
+@media only screen and (max-width: 65em) {
+  .hero__link {
+    margin-bottom: 3.6rem;
+  }
+}
 .hero__pic {
   width: 100%;
   height: 100%;
 }
 .hero__content {
-  padding: 3rem 6rem;
+  padding: 4rem 6rem;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 81em) {
+  .hero__content {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 65em) {
+  .hero__content {
+    order: -1;
+    padding: 2rem;
+    font-size: 2rem;
+  }
 }
 .hero__title {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   color: var(--color-light);
   line-height: 1.35;
   margin-bottom: 2.4rem;
@@ -87,7 +125,6 @@ img {
   font-weight: 500;
 }
 .hero__txt {
-  font-size: 1.6rem;
   color: var(--color-light);
   font-weight: 300;
   margin-bottom: 3.5rem;
@@ -98,13 +135,19 @@ img {
 }
 
 .hero {
-  max-width: 144rem;
-  margin: 0 auto;
+  max-width: 120rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(30rem, 1fr));
+}
+@media only screen and (max-width: 65em) {
+  .grid {
+    grid-template-columns: minmax(30rem, 60rem);
+    row-gap: 3rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .row {
@@ -120,8 +163,21 @@ img {
   background-repeat: no-repeat;
   background-size: 79% 100%;
   background-position: 15% 0;
-  padding: 6.3rem 7rem;
+  padding: 4rem 7rem;
   position: relative;
+  display: grid;
+  place-content: center center;
+}
+@media only screen and (max-width: 81em) {
+  .wrapper {
+    background-image: linear-gradient(to right, hsl(257, 40%, 49%), hsl(257, 40%, 49%)), url(../images/bg-mobile.svg);
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .wrapper {
+    padding: 6rem 1rem;
+  }
 }
 .wrapper::before {
   content: "";
