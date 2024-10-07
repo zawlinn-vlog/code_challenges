@@ -1,0 +1,47 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+
+  &__hero {
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    background-color: getColor(light);
+    color: getColor(primary);
+    letter-spacing: 0.015rem;
+
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: getColor(secondary);
+      color: getColor(light);
+    }
+  }
+
+  &__social {
+    color: getColor(light);
+    width: 4rem;
+    aspect-ratio: 1 /1;
+    border-radius: 50%;
+    border: 0.1rem solid currentColor;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s;
+
+    & > * {
+      font-size: 2rem;
+      display: block;
+    }
+
+    &:hover {
+      color: getColor(secondary);
+    }
+  }
+}

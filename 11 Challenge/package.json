@@ -1,0 +1,32 @@
+{
+  "name": "11-challenge",
+  "version": "1.0.0",
+  "description": "![Design](./assets/design/desktop-design.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server",
+    "compile": "sass ./assets/scss/main.scss ./assets/css/main.css --no-source-map",
+    "watch": "sass ./assets/scss/main.scss ./assets/css/main.css --no-source-map -w",
+    "concat": "concat -o ./assets/css/main.concat.css  ./assets/css/fontawesomepro/css/all.css ./assets/css/main.css",
+    "prefix": "postcss ./assets/css/main.concat.css -o ./assets/css/main.prefix.css --use autoprefixer",
+    "compressed": "sass ./assets/css/main.prefix.css ./assets/css/main.min.css --style=compressed --no-source-map",
+    "start": "npm-run-all --parallel dev watch",
+    "build:css": "npm-run-all compile concat prefix compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "browserslist": "cover 99.5%",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "concat": "^1.0.3",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.79.4"
+  }
+}

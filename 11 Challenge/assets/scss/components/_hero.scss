@@ -1,0 +1,32 @@
+//
+
+.hero {
+  &__link {
+    margin-bottom: 7.3rem;
+    height: 4.5rem;
+  }
+
+  &__content {
+    padding: 3rem 6rem;
+  }
+
+  &__title {
+    font-size: 3.8rem;
+    color: getColor(light);
+    line-height: 1.35;
+    margin-bottom: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  &__txt {
+    font-size: 1.6rem;
+    color: getColor(light);
+    font-weight: 300;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.social {
+  margin: 2rem 0;
+}
