@@ -2,13 +2,15 @@
 .card {
   width: 56rem;
   border-radius: 0.9rem;
-  overflow: hidden;
   margin-bottom: 4rem;
   background-color: getColor(light);
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(30rem, auto);
+
+  overflow: hidden;
+  box-shadow: 0 0.5rem 2rem rgba($tertiary, 0.2);
 
   @include media(36.25em) {
     width: 100%;
@@ -45,6 +47,7 @@
   &__title {
     line-height: 1.05;
     font-size: 3.2rem;
+    color: getColor(tertiary);
     font-family: Fraunces, sans-serif;
   }
 

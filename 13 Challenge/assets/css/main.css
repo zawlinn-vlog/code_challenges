@@ -12,7 +12,7 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-shadow: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -63,12 +63,13 @@ body {
 .card {
   width: 56rem;
   border-radius: 0.9rem;
-  overflow: hidden;
   margin-bottom: 4rem;
   background-color: var(--color-light);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(30rem, auto);
+  overflow: hidden;
+  box-shadow: 0 0.5rem 2rem rgba(28.203, 35.2002, 43.197, 0.2);
 }
 @media only screen and (max-width: 36.25em) {
   .card {
@@ -104,6 +105,7 @@ body {
 .card__title {
   line-height: 1.05;
   font-size: 3.2rem;
+  color: var(--color-tertiary);
   font-family: Fraunces, sans-serif;
 }
 .card__txt {
