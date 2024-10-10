@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-primary: hsl(158, 36%, 37%);
+  --color-secondary: hsl(30, 38%, 92%);
+  --color-tertiary: hsl(212, 21%, 14%);
+  --color-gray: hsl(228, 12%, 48%);
+  --color-light: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-shadow: inherit;
+}
+
+html {
+  font-size: 75%;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 42.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-family: Montserrat, sans-serif;
+}
+
+.mb_small {
+  margin-bottom: 1.2rem;
+}
+
+.mb_medium {
+  margin-bottom: 2.4rem;
+}
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  display: block;
+  padding: 1.3rem 0;
+  border-radius: 0.9rem;
+  background-color: var(--color-primary);
+  text-align: center;
+  color: var(--color-light);
+  font-weight: 600;
+}
+
+.card {
+  width: 56rem;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(30rem, auto);
+}
+@media only screen and (max-width: 36.25em) {
+  .card {
+    width: 100%;
+  }
+}
+.card__pic {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 36.25em) {
+  .card__pic {
+    grid-area: 1/1/2/-1;
+  }
+}
+.card__content {
+  grid-area: 1/2/2/-1;
+  background: var(--color-light);
+  padding: 2.4rem;
+}
+@media only screen and (max-width: 36.25em) {
+  .card__content {
+    grid-area: 2/1/3/-1;
+  }
+}
+.card__subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--color-gray);
+}
+.card__title {
+  line-height: 1.05;
+  font-size: 3.2rem;
+  font-family: Fraunces, sans-serif;
+}
+.card__txt {
+  color: var(--color-gray);
+  line-height: 1.7;
+  font-weight: 500;
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card__price-pro {
+  font-size: 3.2rem;
+  font-family: Fraunces, sans-serif;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+.card__price-actual {
+  text-decoration: line-through;
+  color: var(--color-gray);
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: var(--color-secondary);
+  padding: 2rem;
+  display: grid;
+  place-content: center center;
+}
+
+/*# sourceMappingURL=main.css.map */

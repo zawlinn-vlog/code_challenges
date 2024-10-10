@@ -1,0 +1,14 @@
+//
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: block;
+    padding: 1.3rem 0;
+    border-radius: 0.9rem;
+    background-color: getColor(primary);
+    text-align: center;
+    color: getColor(light);
+    font-weight: 600;
+  }
+}
