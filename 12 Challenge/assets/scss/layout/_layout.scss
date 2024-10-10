@@ -3,15 +3,19 @@
   max-width: $max_width;
   padding: 5rem 2rem 3rem;
 
-  @include media(37.5em) {
-    max-width: 85%;
+  @include media(46em) {
+    max-width: 80%;
+  }
+
+  @include media(31.25em) {
+    max-width: 95%;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
     // column-gap: 4rem;
-    @include media(37.5em) {
+    @include media(46em) {
       flex-direction: column;
       row-gap: 4rem;
     }
@@ -33,10 +37,18 @@
     display: flex;
     align-items: center;
     justify-content: end;
+
+    @include media(31.25em) {
+      justify-content: start;
+    }
   }
 
   &__items {
     list-style: none;
+
+    @include media(31.25em) {
+      width: 100%;
+    }
   }
 
   &__list {
@@ -48,37 +60,59 @@
 
     display: flex;
     column-gap: 2.4rem;
+
+    @include media(31.25em) {
+      flex-direction: column;
+      row-gap: 0.5rem;
+    }
+  }
+
+  &__rate {
+    @include media(31.25em) {
+      order: -1;
+    }
   }
 
   &__cards {
     padding: 6rem 0 5rem;
 
     display: flex;
-    gap: 2rem;
+    // gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @include media(49.2em) {
+    @include media(73.75em) {
+      // flex: 1 1 20rem;
+      gap: 1rem;
+    }
+
+    @include media(46em) {
+      width: 100%;
+      // margin: 0 auto;
+    }
+    @include media(42.4em) {
       justify-content: center;
     }
 
     & > * {
-      width: 30rem;
+      flex-basis: 30rem;
       padding: 3.2rem;
       box-sizing: border-box;
       background-color: getColor(primary);
       color: getColor(light);
       border-radius: 0.5rem;
 
-      @include media(49.2em) {
-        width: 45%;
+      @include media(73.75em) {
+        flex: 1 1 20rem;
       }
-
-      @include media(37.5em) {
-        flex-basis: 95%;
+      @include media(46em) {
+        flex: 0 1 49%;
+      }
+      @include media(42.4em) {
+        flex: 0 1 80%;
       }
       @include media(31.25em) {
-        width: 100%;
+        flex: 0 1 100%;
       }
     }
   }
@@ -87,14 +121,15 @@
     &__list:nth-child(#{$i + 1}) {
       transform: translateX($i * 4 - 8rem);
 
-      @include media(48.75em) {
+      @include media(56em) {
         transform: translateX(0);
       }
     }
 
     .card:nth-child(#{$i + 1}) {
       transform: translateY($i * 1.5rem);
-      @include media(49.2em) {
+
+      @include media(46em) {
         transform: translateY(0);
       }
     }

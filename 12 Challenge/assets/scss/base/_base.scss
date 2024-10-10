@@ -16,7 +16,11 @@ html {
   font-weight: 400;
   line-height: 1.5;
 
-  @include media(73.73em) {
+  @include media(61em) {
+    font-size: 68.75%;
+  }
+
+  @include media(56em) {
     font-size: 62.5%;
   }
 }
