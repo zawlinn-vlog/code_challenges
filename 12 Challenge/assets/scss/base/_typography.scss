@@ -16,11 +16,11 @@
 
   &__txt {
     padding-right: 10%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: getColor(primary__dark);
 
-    @include media(em) {
+    @include media(61em) {
       padding-right: 0;
     }
   }

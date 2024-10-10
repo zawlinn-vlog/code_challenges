@@ -27,4 +27,8 @@ html {
 
 body {
   font-size: 1.5rem;
+
+  @include media(37.25em) {
+    font-size: 1.8rem;
+  }
 }

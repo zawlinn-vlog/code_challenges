@@ -45,12 +45,12 @@
     letter-spacing: 0.05rem;
     font-weight: 300;
     font-size: 1.3rem;
-    color: lighten($primary, 55%);
+    color: lighten($primary, 50%);
   }
 
   &__txt {
     color: getColor(primary__light);
-    font-size: 1.35rem;
+    // font-size: 1.35rem;
     font-weight: 300;
   }
 }
