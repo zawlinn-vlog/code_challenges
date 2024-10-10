@@ -10,6 +10,11 @@
     text-align: center;
     color: getColor(light);
     font-weight: 600;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: getColor(tertiary);
   }
 
   &::before {

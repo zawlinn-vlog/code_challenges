@@ -49,6 +49,10 @@ body {
   text-align: center;
   color: var(--color-light);
   font-weight: 600;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: var(--color-tertiary);
 }
 .btn::before {
   content: "\f217";
