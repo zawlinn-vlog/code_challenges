@@ -11,4 +11,10 @@
     color: getColor(light);
     font-weight: 600;
   }
+
+  &::before {
+    content: "\f217";
+    font-family: "font awesome 5 free";
+    margin-right: 1.2rem;
+  }
 }

@@ -4,6 +4,7 @@
   border-radius: 0.9rem;
   overflow: hidden;
   margin-bottom: 4rem;
+  background-color: getColor(light);
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -25,7 +26,6 @@
 
   &__content {
     grid-area: 1 / 2 / 2 / -1;
-    background: getColor(light);
 
     padding: 2.4rem;
 
