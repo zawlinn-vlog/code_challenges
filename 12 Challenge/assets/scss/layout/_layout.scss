@@ -1,0 +1,106 @@
+//
+.features {
+  max-width: $max_width;
+  padding: 5rem 2rem 3rem;
+
+  @include media(37.5em) {
+    max-width: 85%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    // column-gap: 4rem;
+    @include media(37.5em) {
+      flex-direction: column;
+      row-gap: 4rem;
+    }
+
+    & > * {
+      flex-basis: 45%;
+
+      @include media(48.75em) {
+        flex-basis: 50%;
+      }
+
+      @include media(37.5em) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__list-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__items {
+    list-style: none;
+  }
+
+  &__list {
+    padding: 1rem 1.6rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: getColor(primary__light);
+    font-weight: 700;
+
+    display: flex;
+    column-gap: 2.4rem;
+  }
+
+  &__cards {
+    padding: 6rem 0 5rem;
+
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media(49.2em) {
+      justify-content: center;
+    }
+
+    & > * {
+      width: 30rem;
+      padding: 3.2rem;
+      box-sizing: border-box;
+      background-color: getColor(primary);
+      color: getColor(light);
+      border-radius: 0.5rem;
+
+      @include media(49.2em) {
+        width: 45%;
+      }
+
+      @include media(37.5em) {
+        flex-basis: 95%;
+      }
+      @include media(31.25em) {
+        width: 100%;
+      }
+    }
+  }
+
+  @for $i from 0 through 2 {
+    &__list:nth-child(#{$i + 1}) {
+      transform: translateX($i * 4 - 8rem);
+
+      @include media(48.75em) {
+        transform: translateX(0);
+      }
+    }
+
+    .card:nth-child(#{$i + 1}) {
+      transform: translateY($i * 1.5rem);
+      @include media(49.2em) {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.fa-star {
+  color: #ffcc00;
+}

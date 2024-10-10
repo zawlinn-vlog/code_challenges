@@ -16,7 +16,7 @@ html {
   @include respond(96.9em) {
     font-size: 62.5%;
   }
-  @include respond(81em) {
+  @include respond(82em) {
     font-size: 50%;
   }
 }

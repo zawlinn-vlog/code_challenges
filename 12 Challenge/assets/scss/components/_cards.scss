@@ -1,0 +1,56 @@
+//
+
+.card {
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  &__pic {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.3rem solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  &:hover &__pic {
+    border-color: getColor(light);
+  }
+
+  &:hover &__img {
+    transform: scale(1.2);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+
+    transition: all 0.3s;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    column-gap: 1rem;
+  }
+
+  &__bio {
+    line-height: 1.2;
+  }
+
+  &__position {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: lighten($primary, 55%);
+  }
+
+  &__txt {
+    color: getColor(primary__light);
+    font-size: 1.35rem;
+    font-weight: 300;
+  }
+}

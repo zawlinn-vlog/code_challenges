@@ -1,0 +1,28 @@
+//
+
+.features {
+  &__main-title {
+    padding-right: 10%;
+    font-size: 5.2rem;
+    letter-spacing: -0.2rem;
+    font-weight: 600;
+    line-height: 0.9;
+    color: getColor(primary);
+
+    @include media(37.5em) {
+      padding-right: 0;
+    }
+  }
+
+  &__txt {
+    padding-right: 10%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: getColor(primary__dark);
+
+    @include media(37.5em) {
+      font-size: 2.4rem;
+      padding-right: 0;
+    }
+  }
+}

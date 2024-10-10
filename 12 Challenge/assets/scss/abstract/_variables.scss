@@ -1,0 +1,29 @@
+//
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+//
+
+$primary: hsl(300, 43%, 22%);
+$complementary: hsl(333, 80%, 67%);
+
+$primary__dark: hsl(303, 10%, 53%);
+$primary__light: hsl(300, 24%, 96%);
+
+$light: hsl(0, 0%, 100%);
+
+$colors: (
+  "primary": $primary,
+  "complementary": $complementary,
+  "primary__dark": $primary__dark,
+  "primary__light": $primary__light,
+  "light": $light,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+$max_width: 95rem;
