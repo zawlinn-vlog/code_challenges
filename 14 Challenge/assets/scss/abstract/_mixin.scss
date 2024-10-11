@@ -1,0 +1,7 @@
+//
+
+@mixin media($display) {
+  @media only screen and (max-width: $display) {
+    @content;
+  }
+}

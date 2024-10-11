@@ -1,0 +1,45 @@
+// FONTs
+
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+//
+
+$red: hsl(0, 100%, 67%);
+$orange: hsl(39, 100%, 56%);
+$greenTea: hsl(166, 100%, 37%);
+$blue: hsl(234, 85%, 45%);
+
+$light: hsl(0, 0%, 100%);
+$light-1: hsl(221, 100%, 96%);
+$light-2: hsl(241, 100%, 89%);
+$gray: hsl(224, 30%, 27%);
+
+$primary-gradient: linear-gradient(
+  to bottom,
+  hsl(252, 100%, 67%),
+  hsl(241, 81%, 54%)
+);
+$secondary-gradient: linear-gradient(
+  to bottom,
+  hsla(256, 72%, 46%, 1),
+  hsla(241, 72%, 46%, 0)
+);
+
+$colors: (
+  "red": $red,
+  "organge": $orange,
+  "green": $greenTea,
+  "blue": $blue,
+  "light": $light,
+  "light-1": $light-1,
+  "light-2": $light-2,
+  "gray": $gray,
+  "primary-gradient": $primary-gradient,
+  "secondary-gradient": $secondary-gradient,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}

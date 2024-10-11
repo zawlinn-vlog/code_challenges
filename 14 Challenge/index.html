@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 15px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="card">
+        <!-- LEFT -->
+        <div class="card__left">
+          <p class="card__title">Your Result</p>
+          <p class="card__mark">
+            76 <span class="card__mark-sub">of 100</span>
+          </p>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+          <h3 class="card__main-title">Great</h3>
+          <p class="card__txt">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <!-- RIGHT -->
+        <div class="card__right">
+          <h3 class="card__subtitle">Summary</h3>
+          <ul class="card__list">
+            <li class="card__item">
+              <span class="card__item-name">Reaction</span>
+              <span class="card__item-mark">80 / 100</span>
+            </li>
+            <li class="card__item">
+              <span class="card__item-name">Memory</span>
+              <span class="card__item-mark">92 / 100</span>
+            </li>
+            <li class="card__item">
+              <span class="card__item-name">Verbal</span>
+              <span class="card__item-mark">61 / 100</span>
+            </li>
+            <li class="card__item">
+              <span class="card__item-name">Visual</span>
+              <span class="card__item-mark">72 / 100</span>
+            </li>
+          </ul>
 
-  Reaction
-  80 / 100
+          <a href="#" class="btn btn__continue">Continue</a>
+        </div>
+      </div>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
+  </body>
 </html>
