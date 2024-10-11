@@ -1,0 +1,136 @@
+//
+
+.card {
+  max-width: 60rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin-bottom: 4rem;
+
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media(46em) {
+    width: 30rem;
+    margin: 0 auto;
+    grid-auto-rows: minmax(30rem, auto);
+  }
+
+  // LEFT
+
+  &__left {
+    background-image: getColor(primary-gradient);
+    color: getColor(light-1);
+    border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    @include media(46em) {
+      grid-area: 1 / 1 / 2 / -1;
+    }
+  }
+
+  &__title {
+    color: getColor(light-2);
+  }
+
+  &__mark {
+    width: 70%;
+    aspect-ratio: 1 /1;
+    border-radius: 50%;
+    background-image: getColor(secondary-gradient);
+
+    text-align: center;
+
+    & > * {
+      display: block;
+    }
+
+    &-main {
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-top: 35%;
+    }
+
+    &-sub {
+      color: getColor(light-2);
+    }
+  }
+
+  &__main-title {
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+
+  &__txt {
+    width: 85%;
+    text-align: center;
+    color: getColor(light-2);
+  }
+
+  //  RIGHT
+
+  &__right {
+    position: relative;
+
+    @include media(46em) {
+      grid-area: 2 / 1 / 3 / -1;
+    }
+  }
+
+  &__subtitle {
+    color: getColor(gray);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    padding: 0.9rem 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    i {
+      margin-right: 0.8rem;
+    }
+
+    &-mark {
+      color: rgba($gray, 0.9);
+      // font-weight: 600;
+    }
+  }
+
+  &__item:nth-child(1) {
+    color: getColor(red);
+    background-color: rgba($red, 0.1);
+    border-radius: 0.5rem;
+  }
+  &__item:nth-child(2) {
+    color: getColor(organge);
+    background-color: rgba($orange, 0.1);
+    border-radius: 0.5rem;
+  }
+  &__item:nth-child(3) {
+    color: getColor(green);
+    background-color: rgba($greenTea, 0.1);
+    border-radius: 0.5rem;
+  }
+  &__item:nth-child(4) {
+    color: getColor(blue);
+    background-color: rgba($blue, 0.1);
+    border-radius: 0.5rem;
+  }
+}

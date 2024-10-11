@@ -1,6 +1,6 @@
 # Front-end Style Guide
 
-![Design](./assets/design/desktop-design.jpg)
+![Design](./assets/design/output.png)
 
 ## Layout
 

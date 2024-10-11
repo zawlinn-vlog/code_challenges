@@ -1,0 +1,22 @@
+//
+
+.btn {
+  &:link,
+  &:visited {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__continue {
+    background-color: getColor(gray);
+    border-radius: 3rem;
+    color: getColor(light-1);
+    padding: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: hsl(252, 100%, 67%);
+    }
+  }
+}
